@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой первый сайт на хостинге</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="logo" href="#top">Hosting Lesson</a>
+        <a href="#steps">Шаги</a>
+        <a href="#check">Проверка</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">HTML + CSS + JavaScript</p>
+          <h1>Маленький сайт для урока по хостингу</h1>
+          <p class="lead">
+            Эта страница показывает базовый путь: сделать сайт на компьютере,
+            сохранить его в GitHub и подготовить к публикации на Vercel.
+          </p>
+          <a class="button" href="#steps">Посмотреть шаги</a>
+        </div>
+
+        <div class="hosting-map" aria-label="Схема публикации сайта">
+          <div class="map-card">Компьютер</div>
+          <div class="map-line" aria-hidden="true"></div>
+          <div class="map-card">GitHub</div>
+          <div class="map-line" aria-hidden="true"></div>
+          <div class="map-card">Vercel</div>
+        </div>
+      </section>
+
+      <section id="steps" class="section">
+        <p class="eyebrow">План</p>
+        <h2>Что делает статический сайт</h2>
+        <div class="steps-grid">
+          <article>
+            <span>1</span>
+            <h3>HTML</h3>
+            <p>Хранит текст, ссылки, заголовки и блоки страницы.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>CSS</h3>
+            <p>Отвечает за цвета, отступы, размеры и аккуратный вид.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>JavaScript</h3>
+            <p>Добавляет небольшое поведение без сложного приложения.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="check" class="section check-panel">
+        <div>
+          <p class="eyebrow">Проверка</p>
+          <h2>Готов ли сайт к публикации?</h2>
+          <p>
+            Нажми кнопку: скрипт отметит, что страница открылась и JavaScript
+            работает в браузере.
+          </p>
+        </div>
+        <div class="status-box">
+          <p id="statusText">Статус: ждем проверку</p>
+          <button id="checkButton" type="button">Проверить страницу</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Учебный проект для хостинга. <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
